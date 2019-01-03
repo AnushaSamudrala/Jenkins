@@ -1,3 +1,75 @@
+Jenkins Installation Steps:
+
+Before Installing Jenkins, we must make sure that we need to install the latest version of the Java.
+Step 1: 
+Download Jenkins using the link https://jenkins.io/
+Here, we can see two options: LTS Release and Weekly Release.
+LTS Release: Long Term Support Release or LTS Release. This is a stable release. These releases are chosen every 12 weeks from the 
+stream of regular releases as the stable release for the time period.
+Weekly Release: A new release is produced weekly to deliver bug fixes and features to users and plugin developers. 
+We can select any of these two but LTS Release is preferred.
+Now,click on LTS, a war folder will be downloaded.
+---------------------------------------------------------------------------------------------------------------------------------
+Step 2:
+Now, save/place the war file in the location that you would like to save in your system.
+-----------------------------------------------------------------------------------------------------------------------------------
+Step 3:
+Now, go to command prompt(if your system is windows) or go to terminal (if your system is MAC). 
+Then, go to your folder where Jenkins.war file is saved.
+Now, in the command prompt, give the folder name and then enter the command: java -jar jenkins.war
+Then we can observe that some information will be extracted from the war file and also gives the server name.
+After all these process is completed, Jenkins will be running and we can access Jenkins through the prot number 8080 on our browsers.
+If we observe in the command prompt, we can also find the password for the admin.
+We just need to copy it and save in notepad inorder to give password while accessing the Jenkins on our browser.
+We can also find this password in the Jenkins folder, open initial password file and we can find the password here.
+(location of the folder of the initial password can be found on the browser on the https://localhost:8080/
+This localhost is nothing but your local machine. Instead of localhost, we can also give IP address and the 8080 is the port number 
+where Jenkins will be running.
+-----------------------------------------------------------------------------------------------------------------------------------
+Step 4:
+Go to the browser --> https://localhost:8080
+or after all the previous steps are finished, it will redirect to the port 8080 in your local machine.
+Here, we need to give administrator password. 
+Paste the password and click on continue.
+The home screen of Jenkins will appear here.
+-----------------------------------------------------------------------------------------------------------------------------------------
+Step 5:
+Install the plugins which are required.
+Here, we can see two options: 
+1. Install suggested plugins --> Once will click on this, all the suggested plugins will be installed.
+2. Select plugins to install --> After clicking on this, it asks for selecting the plugins that you wanted to install and we can browse
+by cateogry of plugins. Apart from these, we have options like:All, None and suggested to install plugins.
+---------------------------------------------------------------------------------------------------------------------------------------
+Step 6:
+Creating the First Admin User:
+We have to create an account. Here, i am giving user as admin and also give a password. Then, click save and finsih.
+Now, Jenkins is ready.
+A home screen of Jenkins will appear where you can find different options.
+-------------------------------------------------------------------------------------------------------------------------------------
+Step 7:
+Now, we have to be aware of where all the plugins and the Jenkins directory is located.
+So, we need to find .jenkins folder which is a hidden folder.
+
+For MAC, we can find it by:
+Go to user folder--> .jenkins [we can't find as it is a hidden folder].
+go to command prompt:
+paste--> default write com.apple.finder AppleShowAllFiles TRUE
+then run the command(press enter to run the command)
+then right click and go to the option relaunch.
+go to the user folder(cmd+shift+G)
+Here, it shows all the hidden folders (.jenkins).
+Inside the .jenkins folder we can find all the logs, configurations and everything related to Jenkins and plugins.
+------------------------------------------------------------------------------------------------------------------------------------
+Step 8:
+You can get stated with Jenkins. (You can see the home screen of Jenkins).
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 
  
