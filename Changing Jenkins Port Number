@@ -1,0 +1,11 @@
+Suppose if wanted to launch two applications on two servers simultaneously then the port numbers of two servers must be different.
+As it is known that the port numbers of Tomcat and Jenkins servers are same (i.e., 8080).
+In this kind of situations, the port number of either of the servers must be changed.
+So, here we can change the jenkins port no. :
+
+Open the C folder of your local system --> program file 86--> Jenkins--> Jenkins (XML file) right clcik and edit with notepad++ -->
+press ctrl+F on that xml file and search by typing 8080(shows the port no)-->edit to 8085(changes the port no of jenkins).
+
+Now restart the jenkins server:
+In your local system--> search services--> Jenkins --> Restart
+Now in browser type localhost:8085--> open the jenkins server.
