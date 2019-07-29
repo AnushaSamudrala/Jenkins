@@ -1,1 +1,16 @@
+Start sonarqube--> bin --> start--> run
+In browser, type localhost:9000
+Now, in jenkins--> go to manage jenkins--> manage plugins--> availabe tab--> sonarqube scanner--> install without restart.
+configure system--> enable and add sonarqube server and give name and source url.
+Now, refresh sonarqube server, you can access your application on sonarqube.
 
+--------------------------------------------------------------------------------------------------------------
+SOnarqube analaysis through Jenkins Without integrating:
+
+In maven goals:
+give 1st goal:    sonar:sonar
+in 2nd goal  :    javadoc
+
+and schedule to trigger build and then it builds.
+If this does not works out, needto install sonarqube plugin.
+---------------------------------------------------------------------------------------------------------------------
