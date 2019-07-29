@@ -1,0 +1,11 @@
+Manage Jenkins--> Manage plugins --> Available tab --> email extension plugin.
+
+Configuring the email address of a user:
+Manage Jenkins --> configure --> email notification--> SMTP (Simple Mail Transfer Protocol) Server--> give details--> (e.g: smtp.gmail.com)
+default user email suffix--> @gmail.com--> advance
+Use SMTP authentication user name--> give the user of a person through which thr email has to be sent.(e.g., anu@gmail.com)--> click on user ssc.
+SMTP Port 465
+Reply to add---> give the email address of the user to whom you are sending.
+charset UTF.
+click on test
+test.email receipt= anu@gmail.com
