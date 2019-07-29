@@ -1,0 +1,6 @@
+Firstly make the Nexus server up.
+go to Nexus folder in your local system --> bin --> In folder path type cmd --> give the command nexus.exe / run  in thecommand prompt-->
+this command starts the Nexus server.
+ In browser, type localhost:8081.
+ then the Nexus server opens and runs.
+ Now schedule the build trigger.
