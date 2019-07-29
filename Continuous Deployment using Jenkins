@@ -1,4 +1,0 @@
-To achieve continuous deployment through Jenkins, it is necessary to install:
-a. Deploy to a container plugin on Jenkins.
-b. Install Tomcat and make it up and running.
-So, in order to make Tomcat server running, JAVA must be installed.

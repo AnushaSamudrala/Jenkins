@@ -1,0 +1,41 @@
+To achieve continuous deployment through Jenkins, it is necessary to install:
+a. Deploy to a container plugin on Jenkins.
+b. Install Tomcat and make it up and running.
+So, in order to make Tomcat server running, JAVA must be installed.
+
+In browser open Tomcat server just by typing localhost:8080 in browser.
+Now, start the Tomcat server: Go to Tomcat folder in your local system--> bin --> startup--> starts the Tomcat server.
+Login to Tomcat server.
+When you try to login it without creating account, you can observe an error page which shows error message.
+copy that error message.
+
+If you dont have account, create it.
+Tomcat folder in your local system--> config--> Tomcat user -->edit with notepad++ and paste the copied message in the message part.
+
+For deployment, create another script.
+<role rolename = "manager-script"/>
+<user username = "deploy" password = "deploy" roles = "manager - script"/>
+</tomcat-user>
+save it 
+
+As the changes are made in configuration file, restart the server.
+bin-->shutdown(windows batch file as my system is windows)
+Next, start server
+bin--> startup-->run-->access on browser-->type localhost:8080-->give credentials.
+
+Now deploy the application on Tomcat server:
+Manage Jenkins--> Manage plugin --> install 'deployto a container plugin' from available tab--> click to install without restart.
+go to jenkins dashboard--> go to the application which you want to deploy--> go to configure 
+Post build actions: SCM --> dashboard code and builds a particular (master) branch.
+Build Triggers--> can give a particular time to build that application in build periodically(MinutesHourDateMonthDayoftheweek format).
+Poll SCM --> whenever a push/commit occurs, automatrically build gets triggered.
+Build environment --> delete workspace before build starts.(can delete the workspace before each and every build starts and contains 
+other options. It also contains the options of Maven version, goals etc.,)
+Post Build actions: select .war file (give the path of the .war file. If you dont know the path give ** ./*war)
+add container --> select Tomcat --> give tomcat url http://localhost:8080--> add credentials to deploy --> save.
+so that the build triggers at a given schedule time and build it andthen generates a .war file.
+The .war file is deployed to Tomcat using deployed to a container jenkins plugin.
+Now, go to the browser and type localhost://8080/appname.
+You can access your application on Tomcat server.
+In this way continuous deploymenr can be achoieved on Tomcat server using Jenkins.
+
