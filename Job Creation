@@ -7,8 +7,6 @@ Here, there are two options; we can select either Free- style project or multi-c
 (I have selected a free-style project).
 Then, click on ok.
 
-
- 
 Now,after selecting the project, it is taken to another screen showing options to provide different details of the job.
 Here, we have five options :
 1.	General
@@ -23,8 +21,6 @@ We can give the description of the project.( This is the test project one)
 We can also use HTML tags for the description.
 <h2>This is the test project one</h2>
 Also, we can preview the project description to check how it looks.
-
- 
 
 2.	Source code management:
 Go to the source code management section, so here if you want to take the builds from any source code system like git or sub version 
@@ -125,32 +121,19 @@ If the ball is in red color; the build is failed.
 
 The project can be build by right clicking on the project or by building it after cliking and going into the project.
 
- 
 
 Another way:
-
  
 After the build, the status of the project is indicated by a ball. Here, the ball is in red color indicating the build failure.
  
-
 2. Weather report: showing the aggregated status of the recent builds
 
 This column takes into account the last five runs of the jobs or the project and Based on the project success / failure of the last 
 five builds the weather icon gets changed.
 
-
-
-
-
-
-
 Now, go to configure and make some mistake in the command. Let’s observe what happens!!
-
  
-
- 
-Here, I made a mistake dat instead of date. So, the status of the build depends on the last build and the weather changes based on the 
-last five builds.
+Here, the status of the build depends on the last build and the weather changes based on the last five builds.
 If I run the build again, it changes to cloudy.
-We can see the build history and the build no.’s are indicated by # followed by number.
+We can see the build history and the build no.’s are indicated by # followed by a number.
  
