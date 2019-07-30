@@ -12,5 +12,5 @@ give 1st goal:    sonar:sonar
 in 2nd goal  :    javadoc
 
 and schedule to trigger build and then it builds.
-If this does not works out, needto install sonarqube plugin.
+If this does not works out, need to install sonarqube plugin.
 ---------------------------------------------------------------------------------------------------------------------
