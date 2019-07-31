@@ -1,0 +1,7 @@
+Adding slave in Jenkins Master:
+Manage Jenkins -->Manage Nodes -->New Node--> give a node name  click on permananent agent --> ok-->give remote root directory --> 
+launch method: launch slave via agent ssh -->Host: give Ip add(ip add can be obtained by a command ifconfig)-->can add credentials 
+After that click on the node or the slave that you cretaed and open logs to check the output.
+To check if the slave is added to master.
+Give the command: sudo ls  /home/edureka/
+Shows that the slave is sucessfully added to master.
