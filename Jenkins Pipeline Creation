@@ -1,0 +1,15 @@
+Jenkins Pipeline:
+
+In Jenkins dashboard, after ‘ALL’ option there is a ‘+’ option. select ‘+’ symbol --> give any name and select ‘build pipeline view’
+You can specify the descriptions and all other options mentioned on dashboard.
+Apart from these, you can select the initial job either code review or compile or test. The selected option will be run as the first job.
+Here, you can choose the number of builds to display.
+Then finally click appply and ok.
+Adding more jobs to pipeline:
+
+To the above build pipeline, you can add other jobs just by clicking the another job which you want to run next and in that job go to 
+configure option.
+In build triggers tab, select the option of build after other projects are build.
+Then give the name of the project which you want to run before this project and select any option of  trigger only after the build 
+succeded or failed or even unstable.
+So, the builds will run as per the series of jobs added to pipeline that is created.
